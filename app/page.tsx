@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <h1>
-      <Link href="/app">going to aboutMe</Link>
+      <Link href="/aboutMe">going to aboutMe</Link>
     </h1>
   );
 }
