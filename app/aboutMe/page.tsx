@@ -1,10 +1,9 @@
 import Link from "next/link";
-import Image from "next/image";
 
-export default function aboutMePage() {
+export default function aboutMe() {
   return (
     <h1>
-      <Link href="/">return to home</Link>
+      <Link href="/">this is aboutme return to home</Link>
     </h1>
   );
 }

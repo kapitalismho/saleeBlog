@@ -1,4 +1,9 @@
+:root {
+  --main-bg-color: #1E2021;
+  --main-text-color: #E4E1E1;
+}
+
 body {
-  background-color: #1E2021;
+  background-color: var(--main-bg-color);
   margin: 0 0 0 0;
 }

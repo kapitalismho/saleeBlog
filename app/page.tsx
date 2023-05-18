@@ -8,49 +8,39 @@ import {
   GmailIcon,
   GithubIcon,
   LinkedinIcon,
-} from "./components/icons";
+  IconWithLink,
+} from "../components/icons";
 
 export default function HomePage() {
   return (
-    <main className={styles.topContainer}>
-      <div className={styles.linkContainer}>
+    <main className={styles.Container}>
+      <div className={styles.link}>
         <Link href="/aboutMe">
-            <Image className={styles.imageContainer}
+            <Image className={styles.image}
               src={homepic}
               width={1320}
               height={1614}
               alt="ilust of the salee avatar, click to move aboutme page"
+              priority
               />
         </Link>
-        <aside className={styles.iconContainer}>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
+        <aside className={styles.icons}>
+          <IconWithLink
             href="https://www.discord.com/users/377814093182140416"
-          >
-            <DiscordIcon />
-          </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
+            icon={DiscordIcon}
+          />
+          <IconWithLink
             href="mailto:kapitalismho@gmail.com"
-          >
-            <GmailIcon />
-          </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
+            icon={GmailIcon}
+          />
+          <IconWithLink
             href="https://github.com/kapitalismho"
-          >
-            <GithubIcon />
-          </a>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
+            icon={GithubIcon}
+          />
+          <IconWithLink
             href="https://www.linkedin.com/in/sabin-lee-b3b190218/"
-          >
-            <LinkedinIcon />
-          </a>
+            icon={LinkedinIcon}
+          />
         </aside>
       </div>
     </main>
