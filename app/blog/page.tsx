@@ -1,9 +1,11 @@
 import Link from "next/link";
 
-export default function blog() {
+const blog = () => {
   return (
     <h1>
       <Link href="/">this is blog return to home</Link>
     </h1>
   );
-}
+};
+
+export default blog;

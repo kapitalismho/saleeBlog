@@ -11,7 +11,7 @@ import {
   IconWithLink,
 } from "../components/icons";
 
-export default function HomePage() {
+const HomePage = () => {
   return (
     <main className={styles.Container}>
       <div className={styles.link}>
@@ -45,4 +45,6 @@ export default function HomePage() {
       </div>
     </main>
   );
-}
+};
+
+export default HomePage;

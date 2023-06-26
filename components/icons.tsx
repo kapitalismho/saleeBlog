@@ -1,4 +1,11 @@
-export function DiscordIcon() {
+import React from "react";
+
+type IconProps = {
+  href: string;
+  icon: React.ComponentType;
+};
+
+export const DiscordIcon = () => {
   return (
   <svg
     width="25px"
@@ -21,9 +28,9 @@ export function DiscordIcon() {
     </defs>
   </svg>
   );
-}
+};
 
-export function GmailIcon() {
+export const GmailIcon = () => {
   return (
     <svg
       width="25px"
@@ -41,9 +48,9 @@ export function GmailIcon() {
       />
     </svg>
   );
-}
+};
 
-export function GithubIcon () {
+export const GithubIcon = () => {
   return (
     <svg
       width="25px"
@@ -61,9 +68,9 @@ export function GithubIcon () {
       />
     </svg>
   );
-}
+};
 
-export function LinkedinIcon () {
+export const LinkedinIcon = () => {
   return (
     <svg
       width="25px"
@@ -81,9 +88,9 @@ export function LinkedinIcon () {
       />
     </svg>
   );
-}
+};
 
-export function IconWithLink({ href, icon: Icon }) {
+export const IconWithLink = ({ href, icon: Icon }: IconProps)  => {
   return (
     <a
       rel="noopener noreferrer"
@@ -93,4 +100,4 @@ export function IconWithLink({ href, icon: Icon }) {
       <Icon />
     </a>
   );
-}
+};
