@@ -90,6 +90,18 @@ export const LinkedinIcon = () => {
   );
 };
 
+export const hamburgerMenuIcon = () => {
+  return (
+    <svg width="32px" height="32px" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"/>
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"/>
+      <g id="SVGRepo_iconCarrier"> 
+        <path d="M5 6H19M5 10H19M5 14H19M5 18H19" stroke="#E4E1E1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/> 
+      </g>
+    </svg>
+  );
+};
+
 export const IconWithLink = ({ href, icon: Icon }: IconProps)  => {
   return (
     <a

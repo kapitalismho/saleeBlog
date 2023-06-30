@@ -34,8 +34,8 @@
   margin-right: 10px;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 48rem) {
   .link {
-    width: 30%;
+    max-width: 50%;
   }
 }

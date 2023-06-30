@@ -8,11 +8,13 @@ body {
   margin: 0 0 0 0;
   display: grid; 
   grid-template-columns: 1fr; 
-  grid-template-rows: 3.5em calc(100vh - 3.5em); 
+  grid-template-rows: 3.5rem calc(100vh - 3.5rem); 
   gap: 0px 0px; 
   grid-template-areas: 
     "navbar"
     "main";
+  max-width: 80rem;
+  margin: auto;
 }
 
 main {

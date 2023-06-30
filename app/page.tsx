@@ -20,9 +20,10 @@ const HomePage = () => {
               src={homepic}
               width={1320}
               height={1614}
+              quality={90}
               alt="ilust of the salee avatar, click to move aboutme page"
               priority
-              />
+            />
         </Link>
         <aside className={styles.icons}>
           <IconWithLink
