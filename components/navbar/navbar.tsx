@@ -12,26 +12,25 @@ type MenuButtonProps = {
   icon: React.ComponentType;
 };
 
-type MobileMenuProps = {
+type Props = {
   isNavExpanded: boolean;
   toggleNavbar: () => void;
 };
 
-type BlurOverlayProps = {
-  isNavExpanded: boolean;
-};
-
-const BlurOverlay = ({ isNavExpanded }: BlurOverlayProps) => {
+const BlurOverlay = ({ isNavExpanded }: { isNavExpanded: boolean; }) => {
   return (
     <div className={
-      isNavExpanded ? styles.blurOverlayVisible : styles.blurOverlayHidden}
+      isNavExpanded ? styles.blurOverlayVisible : styles.blurOverlayHidden
+    }
        />
   );
 };
 
 const MenuButton = ({ toggleNavbar, icon: Icon }: MenuButtonProps) => {
   return (
-    <button
+    <button 
+      id="hamburger-menu"
+      aria-label="hamburger menu"
       className={styles.hamburger}
       onClick={toggleNavbar}
     >
@@ -40,7 +39,7 @@ const MenuButton = ({ toggleNavbar, icon: Icon }: MenuButtonProps) => {
   )
 };
 
-const MobileMenu = ({ isNavExpanded, toggleNavbar }: MobileMenuProps) => {
+const MobileMenu = ({ isNavExpanded, toggleNavbar }: Props) => {
   return (
     <div
     className={

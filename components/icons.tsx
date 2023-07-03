@@ -1,7 +1,8 @@
 import React from "react";
 
-type IconProps = {
+type Props = {
   href: string;
+  description: string;
   icon: React.ComponentType;
 };
 
@@ -102,12 +103,13 @@ export const hamburgerMenuIcon = () => {
   );
 };
 
-export const IconWithLink = ({ href, icon: Icon }: IconProps)  => {
+export const IconWithLink = ({ href, description, icon: Icon }: Props)  => {
   return (
     <a
       rel="noopener noreferrer"
       target="_blank"
       href={href}
+      aria-label={description}
     >
       <Icon />
     </a>

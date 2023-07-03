@@ -73,6 +73,10 @@
     font-size: 1.5rem;
   }
 
+  .menu li > *:hover {
+    text-shadow: 0 0 2px;
+  }
+
   .mobileMenu {
     display: none;
   }

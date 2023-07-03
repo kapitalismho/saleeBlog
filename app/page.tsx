@@ -25,23 +25,29 @@ const HomePage = () => {
               priority
             />
         </Link>
-        <aside className={styles.icons}>
-          <IconWithLink
-            href="https://www.discord.com/users/377814093182140416"
-            icon={DiscordIcon}
-          />
-          <IconWithLink
-            href="mailto:kapitalismho@gmail.com"
-            icon={GmailIcon}
-          />
-          <IconWithLink
-            href="https://github.com/kapitalismho"
-            icon={GithubIcon}
-          />
-          <IconWithLink
-            href="https://www.linkedin.com/in/sabin-lee-b3b190218/"
-            icon={LinkedinIcon}
-          />
+        <aside>
+          <address className={styles.icons} >
+            <IconWithLink
+              href="https://www.discord.com/users/377814093182140416"
+              icon={DiscordIcon}
+              description="Discord"
+              />
+            <IconWithLink
+              href="mailto:kapitalismho@gmail.com"
+              icon={GmailIcon}
+              description="Email"
+              />
+            <IconWithLink
+              href="https://github.com/kapitalismho"
+              icon={GithubIcon}
+              description="Github"
+              />
+            <IconWithLink
+              href="https://www.linkedin.com/in/sabin-lee-b3b190218/"
+              icon={LinkedinIcon}
+              description="Linkedin"
+              />
+            </address>
         </aside>
       </div>
     </main>
