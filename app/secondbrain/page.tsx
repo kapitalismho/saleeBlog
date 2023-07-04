@@ -6,6 +6,6 @@ const secondbrain = () => {
       <Link href="/">this is secondbrain return to home</Link>
     </h1>
   );
-}
+};
 
 export default secondbrain;
