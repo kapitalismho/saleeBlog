@@ -1,16 +1,16 @@
 :root {
-  --main-bg-color: #1E2021;
-  --main-text-color: #E4E1E1;
+  --main-bg-color: #1e2021;
+  --main-text-color: #e4e1e1;
 }
 
 body {
   background-color: var(--main-bg-color);
   margin: 0 0 0 0;
-  display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 3.5rem calc(100vh - 3.5rem); 
-  gap: 0px 0px; 
-  grid-template-areas: 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3.5rem calc(100vh - 3.5rem);
+  gap: 0px 0px;
+  grid-template-areas:
     "navbar"
     "main";
   max-width: 80rem;
