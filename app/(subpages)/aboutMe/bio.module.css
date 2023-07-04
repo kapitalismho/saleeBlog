@@ -1,0 +1,11 @@
+.paragraphContainer p{
+  white-space: pre-line;
+  font-size: 2rem;
+  color: var(--main-text-color);
+}
+
+@media (max-width: 48rem) {
+  .paragraphContainer p{
+    font-size: 1.5rem;
+  }
+}

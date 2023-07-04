@@ -1,0 +1,20 @@
+.container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3.5rem calc(100% - 3.5rem);
+  gap: 0px 0px;
+  grid-template-areas:
+    "navbar"
+    "main";
+}
+
+.main {
+  grid-area: main;
+}
+
+@media (max-width: 64rem) {
+  .container {
+    max-width: 90%;
+  }
+}

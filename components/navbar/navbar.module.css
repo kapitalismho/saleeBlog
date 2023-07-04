@@ -20,11 +20,9 @@
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  margin-left: 0.5rem;
 }
 
 .hamburger {
-  margin-right: 1rem;
   padding: 0 0 0 0;
   border-width: 0px;
   cursor: pointer;
@@ -138,5 +136,11 @@
   .saleePicture {
     height: 2.5rem;
     width: 2.5rem;
+  }
+}
+
+@media (max-width: 64rem) {
+  .nav {
+    max-width: 90%;
   }
 }
