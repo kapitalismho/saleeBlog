@@ -1,5 +1,4 @@
-import "./global.css";
-import Navbar from "../components/navbar/navbar";
+import './global.css'
 
 export const metadata = {
   title: "Next.js",
@@ -14,8 +13,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <Navbar />
-        <main>{children}</main>
+        {children}
       </body>
     </html>
   );

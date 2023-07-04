@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import navbarPic from "./navbarPic.png";
 import styles from "./navbar.module.css";
-import { hamburgerMenuIcon } from "../icons";
+import { hamburgerMenuIcon } from "components/icons";
 
 type MenuButtonProps = {
   toggleNavbar: () => void;

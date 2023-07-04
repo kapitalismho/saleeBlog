@@ -8,11 +8,11 @@ import {
   GithubIcon,
   LinkedinIcon,
   IconWithLink,
-} from "../components/icons";
+} from "components/icons";
 
 const HomePage = () => {
   return (
-    <main className={styles.Container}>
+    <main className={styles.container}>
       <div className={styles.link}>
         <Link href="/aboutMe">
           <Image
